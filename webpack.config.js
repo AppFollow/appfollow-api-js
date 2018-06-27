@@ -1,19 +1,20 @@
 const path = require('path');
 const webpack = require('webpack');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
-const plugins = [
-	new UglifyJSPlugin(),
-];
 
 module.exports = {
 	output: {
-		filename: 'index.js',
-		path: path.resolve(__dirname),
+		filename: 'api-sign.min.js',
+		path: path.resolve(`${__dirname}/dist`),
 	},
 	entry: {
-		'index': './src/index.js',
+		'index': './src/api-sign.js',
 	},
-	plugins,
+	plugins: [
+		new CleanWebpackPlugin('dist'),
+		new UglifyJSPlugin(),
+	],
 	module: {
 		rules: [
 			{

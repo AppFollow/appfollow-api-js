@@ -1,7 +1,22 @@
 {
-  "presets": [["latest", {
-    "es2015": {
-      "modules": false
-    }
-  }]]
+  "presets": [
+    [
+      "es2015",
+      {
+        "modules": false
+      }
+    ],
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": [
+            "last 5 versions"
+          ]
+        },
+        "useBuiltIns": false,
+        "uglify": true
+      }
+    ]
+  ]
 }

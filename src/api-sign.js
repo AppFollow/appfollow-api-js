@@ -1,39 +1,39 @@
-import md5 from 'crypto-md5';
+import MD5 from 'md5.js';
 
 export const ASO_BASE_URL = 'http://api.appfollow.io/aso';
 export const BASE_URL = 'http://api.appfollow.io';
+
+export const sign = (message = 'thisisteststring') => new MD5().update(message).digest('hex');
 
 export const sortObject = obj => {
 	const sorted = {};
 	const arrayKeys = [];
 
-	for (let key in obj) {
-		if (obj.hasOwnProperty(key)) {
+	Object.keys(obj).forEach(key => {
+		if (Object.prototype.hasOwnProperty.call(obj, key)) {
 			arrayKeys.push(key);
 		}
-	}
+	});
 
 	arrayKeys.sort();
 
-	for (let key of arrayKeys) {
+	Object.keys(arrayKeys).forEach(key => {
 		sorted[key] = obj[key];
-	}
+	});
 
 	return sorted;
-}
+};
 
 export const makeSign = (params, endpoint, apiSecret) => {
-	params = sortObject(params);
+	const sortParams = sortObject(params);
 
 	let signString = '';
 
-	for (let attr in params) {
-		signString += `${attr}=${params[attr]}`;
-	};
+	Object.keys(sortParams).forEach(attr => {
+		signString += `${attr}=${sortParams[attr]}`;
+	});
 
 	signString += endpoint + apiSecret;
 
 	return sign(signString);
 };
-
-export const sign = (message = 'thisisteststring') => md5(message, 'hex')
