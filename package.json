@@ -1,6 +1,6 @@
 {
   "name": "appfollow-api-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Appfollow API JS",
   "scripts": {
     "start": "webpack -p"
