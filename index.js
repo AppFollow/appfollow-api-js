@@ -1,6 +1,5 @@
 import MD5 from 'md5.js';
 
-export const ASO_BASE_URL = 'http://api.appfollow.io/aso';
 export const BASE_URL = 'http://api.appfollow.io';
 
 export const sign = (message = 'thisisteststring') => new MD5().update(message).digest('hex');
