@@ -3,11 +3,6 @@
 ## Установка
 
     npm install appfollow-api-js
-
-Или:
-
-    yarn add appfollow-api-js
-    
     
 ## Функции и параметры
  * `BASE_URL`: адрес апи
