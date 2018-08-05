@@ -13,6 +13,15 @@
   },
   "author": "AppFollow",
   "license": "ISC",
+  "standard": {
+    "ignore": [
+      "/dist/"
+    ]
+  },
+  "main": "dist/api-sign.min.js",
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "md5.js": "1.3.4"
   },
