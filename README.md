@@ -9,20 +9,24 @@
   <a href="http://npmcharts.com/compare/appfollow-api-js">
     <img src="https://img.shields.io/npm/dm/appfollow-api-js.svg?style=flat-square" alt="downloads">
   </a>
-  <a href="https://unpkg.com/appfollow-api-js/dist/">
-    <img src="http://img.badgesize.io/https://unpkg.com/appfollow-api-js/dist/appfollow-api-js.min.js?label=size&style=flat-square" alt="size">
-  </a>
-  <a href="https://unpkg.com/appfollow-api-js/dist/">
-    <img src="http://img.badgesize.io/https://unpkg.com/appfollow-api-js/dist/appfollow-api-js.min.js?compression=gzip&label=gzip%20size&style=flat-square" alt="gzip size">
-  </a>
-  <a href="https://github.com/AppFollow/appfollow-api-js/blob/master/package.json">
-    <img src="https://img.shields.io/badge/dependencies-none-lightgrey.svg?style=flat-square" alt="no dependencies">
-  </a>
 </p>
 
 ## Установка
 
-    npm install appfollow-api-js
+```sh
+npm install appfollow-api-js
+# or
+yarn add appfollow-api-js
+```
+
+###### Download
+
+- [Minified](https://cdn.jsdelivr.net/npm/appfollow-api-js/dist/api-sign.min.js)
+
+###### CDN
+
+- [jsDelivr](https://www.jsdelivr.com/package/npm/appfollow-api-js)
+- [unpkg](https://unpkg.com/appfollow-api-js/)
 
 ## Функции и параметры
  * `BASE_URL`: адрес апи
