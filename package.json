@@ -18,6 +18,16 @@
       "/dist/"
     ]
   },
+  "keywords": [
+    "appfollow",
+    "api",
+    "js",
+    "app store",
+    "google play",
+    "aso",
+    "reviews",
+    "keywords"
+  ],
   "main": "dist/api-sign.min.js",
   "files": [
     "dist"
