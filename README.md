@@ -11,7 +11,7 @@
   </a>
 </p>
 
-## Установка
+## Install
 
 ```sh
 npm install appfollow-api-js
@@ -28,14 +28,14 @@ yarn add appfollow-api-js
 - [jsDelivr](https://www.jsdelivr.com/package/npm/appfollow-api-js)
 - [unpkg](https://unpkg.com/appfollow-api-js/)
 
-## Функции и параметры
- * `BASE_URL`: адрес апи
- * `sortObject(obj)`: функция для сортировки свойств объект по алфавиту
- * `sign(message)`: функция для хеширования строки
- * `makeSign(params, endpoint, apiSecret)`: функция для полученя подписи, параметры: объект параметров, конечная точка, api secret
+## Functions and parameters
+ * `BASE_URL`: API url
+ * `sortObject(obj)`: The function of sorting the properties of the object in alphabetical order
+ * `sign(message)`: Function for hashing a string
+ * `makeSign(params, endpoint, apiSecret)`: Function for get a signature, parameters: object of params, end point, api secret
 
-## Пример
-Получить список всех коллекций:
+## Example
+Get a list of all collections:
 ```
 import {makeSign, BASE_URL} from 'appfollow-api-js';
 
