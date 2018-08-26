@@ -28,7 +28,7 @@
     "reviews",
     "keywords"
   ],
-  "main": "dist/api-sign.min.js",
+  "main": "index.js",
   "files": [
     "dist"
   ],
