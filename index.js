@@ -16,7 +16,7 @@ export const sortObject = obj => {
 
 	arrayKeys.sort();
 
-	Object.keys(arrayKeys).forEach(key => {
+	arrayKeys.forEach(key => {
 		sorted[key] = obj[key];
 	});
 
