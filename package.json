@@ -1,6 +1,6 @@
 {
   "name": "appfollow-api-js",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Appfollow API JS",
   "scripts": {
     "preinstall": "echo node $(node -v) && echo npm $(npm -v)",
