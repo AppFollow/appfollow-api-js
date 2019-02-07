@@ -11,7 +11,7 @@
       {
         "targets": {
           "browsers": [
-            "last 5 versions"
+            "last 10 versions"
           ]
         },
         "useBuiltIns": false,
