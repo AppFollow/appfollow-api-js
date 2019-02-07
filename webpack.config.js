@@ -11,7 +11,7 @@ module.exports = {
 		path: path.resolve(`${__dirname}/dist`),
 	},
 	entry: {
-		'index': './index.js',
+		'index': ['babel-polyfill', './index.js'],
 	},
 	plugins: [
 		new CleanWebpackPlugin('dist'),
