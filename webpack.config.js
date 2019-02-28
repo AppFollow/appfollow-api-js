@@ -7,14 +7,14 @@ module.exports = {
 	cache: true,
 	mode: 'production',
 	output: {
-		filename: 'api-sign.min.js',
-		path: path.resolve(`${__dirname}/dist`),
+		filename: 'index.js',
+		path: path.resolve(`${__dirname}`),
 	},
 	entry: {
-		'index': ['babel-polyfill', './index.js'],
+		'index': ['babel-polyfill', './src.js'],
 	},
 	plugins: [
-		new CleanWebpackPlugin('dist'),
+		new CleanWebpackPlugin('index.js'),
 		new webpack.DefinePlugin({
 			'process.env': {
 				NODE_ENV: JSON.stringify('production'),
