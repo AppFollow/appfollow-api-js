@@ -1,4 +1,7 @@
 # AppFollow API js
+
+# Package no longer supported. Use API instead https://appfollow.docs.apiary.io
+
 <p>
   <a href="https://www.npmjs.com/package/appfollow-api-js">
     <img src="https://img.shields.io/npm/v/appfollow-api-js.svg?style=flat-square" alt="version">
